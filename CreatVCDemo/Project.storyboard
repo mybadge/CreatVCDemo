@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View2 Controller-->
+        <scene sceneID="fK3-EW-duk">
+            <objects>
+                <viewController storyboardIdentifier="TestView2Controller" id="bBm-cM-ZeH" customClass="TestView2Controller" customModule="CreatVCDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mgg-3N-0bw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ur9-lH-FIT">
+                                <rect key="frame" x="127" y="120" width="121" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="LMW-R5-JuS"/>
+                                    <constraint firstAttribute="width" constant="121" id="ziq-Tc-3em"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnG-oO-Klz">
+                                <rect key="frame" x="127" y="187" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5mG-2L-vYu"/>
+                                    <constraint firstAttribute="width" constant="120" id="pLc-5Y-oUI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnToCustomAction:" destination="bBm-cM-ZeH" eventType="touchUpInside" id="iIZ-Bc-8E0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WnG-oO-Klz" firstAttribute="top" secondItem="ur9-lH-FIT" secondAttribute="bottom" constant="40" id="7zp-qY-rLB"/>
+                            <constraint firstItem="ur9-lH-FIT" firstAttribute="centerX" secondItem="mgg-3N-0bw" secondAttribute="centerX" id="8Aa-ks-haV"/>
+                            <constraint firstItem="WnG-oO-Klz" firstAttribute="centerX" secondItem="mgg-3N-0bw" secondAttribute="centerX" id="F9W-dD-lka"/>
+                            <constraint firstItem="ur9-lH-FIT" firstAttribute="top" secondItem="rP2-ds-ZQu" secondAttribute="top" constant="100" id="S3a-xh-kXY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rP2-ds-ZQu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wY0-eD-prU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="229"/>
+        </scene>
+    </scenes>
+</document>
