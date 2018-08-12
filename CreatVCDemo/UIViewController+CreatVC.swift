@@ -47,7 +47,7 @@ extension BaseViewController {
         if type == .none {
             return self.init()
         } else {
-            if let vc = UIStoryboard.initVC(withType: self) {
+            if let vc = UIStoryboard.initVC(classType: self) {
                 return vc
             } else {
                 debugPrint("className=\(className())创建失败")
@@ -59,14 +59,14 @@ extension BaseViewController {
 
 extension UIStoryboard {
     /// 根据类名创建 由StoryBoard 创建的控制器.
-    class func initVC<T>(withType: T.Type) -> T? where T: ClassNameDelete, T: StoryBoardDelegate {
+    class func initVC<T>(classType: T.Type) -> T? where T: ClassNameDelete, T: StoryBoardDelegate {
         let name = T.storyBoardName()
         let sb = UIStoryboard.init(name: name.rawValue, bundle: nil)
-        let vc = sb.instantiateVC(withType: withType)
+        let vc = sb.instantiateVC(classType: classType)
         return vc
     }
     
-    func instantiateVC<T>(withType: T.Type) -> T? where T: ClassNameDelete {
+    func instantiateVC<T>(classType: T.Type) -> T? where T: ClassNameDelete {
         let className = T.className()
         let vc = instantiateViewController(withIdentifier: className)
         return vc as? T
