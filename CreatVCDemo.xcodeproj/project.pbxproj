@@ -16,7 +16,7 @@
 		DA96C977211F2E600071C0E6 /* TestView1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96C976211F2E600071C0E6 /* TestView1Controller.swift */; };
 		DA96C979211F2E6F0071C0E6 /* TestView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96C978211F2E6F0071C0E6 /* TestView2Controller.swift */; };
 		DA96C97B211F2EB20071C0E6 /* Custom01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96C97A211F2EB20071C0E6 /* Custom01ViewController.swift */; };
-		DA96C97D211F303D0071C0E6 /* UIViewController+Catrgory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96C97C211F303D0071C0E6 /* UIViewController+Catrgory.swift */; };
+		DA96C97D211F303D0071C0E6 /* UIViewController+CreatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA96C97C211F303D0071C0E6 /* UIViewController+CreatVC.swift */; };
 		DA96C97F211F315A0071C0E6 /* Project.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA96C97E211F315A0071C0E6 /* Project.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		DA96C976211F2E600071C0E6 /* TestView1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView1Controller.swift; sourceTree = "<group>"; };
 		DA96C978211F2E6F0071C0E6 /* TestView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView2Controller.swift; sourceTree = "<group>"; };
 		DA96C97A211F2EB20071C0E6 /* Custom01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom01ViewController.swift; sourceTree = "<group>"; };
-		DA96C97C211F303D0071C0E6 /* UIViewController+Catrgory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Catrgory.swift"; sourceTree = "<group>"; };
+		DA96C97C211F303D0071C0E6 /* UIViewController+CreatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CreatVC.swift"; sourceTree = "<group>"; };
 		DA96C97E211F315A0071C0E6 /* Project.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Project.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +66,7 @@
 		DA96C961211F2DFF0071C0E6 /* CreatVCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				DA96C97C211F303D0071C0E6 /* UIViewController+Catrgory.swift */,
+				DA96C97C211F303D0071C0E6 /* UIViewController+CreatVC.swift */,
 				DA96C974211F2E310071C0E6 /* BaseViewController.swift */,
 				DA96C962211F2DFF0071C0E6 /* AppDelegate.swift */,
 				DA96C964211F2DFF0071C0E6 /* ViewController.swift */,
@@ -160,7 +160,7 @@
 				DA96C963211F2DFF0071C0E6 /* AppDelegate.swift in Sources */,
 				DA96C979211F2E6F0071C0E6 /* TestView2Controller.swift in Sources */,
 				DA96C975211F2E310071C0E6 /* BaseViewController.swift in Sources */,
-				DA96C97D211F303D0071C0E6 /* UIViewController+Catrgory.swift in Sources */,
+				DA96C97D211F303D0071C0E6 /* UIViewController+CreatVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
