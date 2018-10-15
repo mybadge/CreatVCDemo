@@ -18,16 +18,16 @@ enum StoryBoardName: String {
     case mine = "Mine"
 }
 
-protocol StoryBoardDelegate {
+protocol StoryBoardProtocol {
     static func storyBoardName() -> StoryBoardName
 }
 
-protocol ClassNameDelete {
+protocol ClassNameProtocol {
     static func className() -> String
 }
 
 
-extension UIViewController: ClassNameDelete {
+extension UIViewController: ClassNameProtocol {
     static func className() -> String {
         if let className = classForCoder().description().components(separatedBy: ".").last {
             return className
@@ -59,14 +59,14 @@ extension BaseViewController {
 
 extension UIStoryboard {
     /// 根据类名创建 由StoryBoard 创建的控制器.
-    class func initVC<T>(classType: T.Type) -> T? where T: ClassNameDelete, T: StoryBoardDelegate {
+    class func initVC<T>(classType: T.Type) -> T? where T: ClassNameProtocol, T: StoryBoardProtocol {
         let name = T.storyBoardName()
         let sb = UIStoryboard.init(name: name.rawValue, bundle: nil)
         let vc = sb.instantiateVC(classType: classType)
         return vc
     }
     
-    func instantiateVC<T>(classType: T.Type) -> T? where T: ClassNameDelete {
+    func instantiateVC<T>(classType: T.Type) -> T? where T: ClassNameProtocol {
         let className = T.className()
         let vc = instantiateViewController(withIdentifier: className)
         return vc as? T
