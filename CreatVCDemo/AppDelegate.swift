@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CreatVCDemo
+//  initVCDemo
 //
 //  Created by 赵志丹 on 2018/8/11.
 //  Copyright © 2018年 mybadge. All rights reserved.

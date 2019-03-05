@@ -41,7 +41,7 @@ extension UIViewController: ClassNameProtocol {
 extension BaseViewController {
     
     /// 通用创建VC方式
-    class func creatVC() -> Self {
+    class func initVC() -> Self {
         
         let type = self.storyBoardName()
         if type == .none {

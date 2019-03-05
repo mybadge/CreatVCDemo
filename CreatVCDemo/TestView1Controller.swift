@@ -1,6 +1,6 @@
 //
 //  TestView1Controller.swift
-//  CreatVCDemo
+//  initVCDemo
 //
 //  Created by 赵志丹 on 2018/8/11.
 //  Copyright © 2018年 mybadge. All rights reserved.
@@ -21,7 +21,7 @@ class TestView1Controller: BaseViewController {
     }
     
     @IBAction func btnToTest2Action(_ sender: UIButton) {
-        let vc = TestView2Controller.creatVC()
+        let vc = TestView2Controller.initVC()
         navigationController?.pushViewController(vc, animated: true)
     }
     
